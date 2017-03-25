@@ -1,22 +1,26 @@
 # Vagrant-Debian-Ansible-LEMP  
 [![Build Status](https://travis-ci.org/neikei/vagrant-debian-ansible-lemp.svg?branch=master)](https://travis-ci.org/neikei/vagrant-debian-ansible-lemp)
 
-This is a development environment for Symfony projects on a Debian based Vagrantbox from the [bento project](https://github.com/chef/bento).
+This is a development environment for Symfony projects on a Debian based Vagrantbox from the [bento project](https://github.com/chef/bento) forked from https://github.com/neikei/vagrant-debian-ansible-lemp which also enables one to develeop inside and outside the box; right out of the box, thanks to ansible. 
 
 ## Included components
 
-| Software | Version | Tested   |
-|----------|---------|----------|
-| Debian   | 8.7     | &#10003; |
-| Nginx    | 1.10.3  | &#10003; |
-| MySQL    | 5.5.54  | &#10003; |
-| Redis    | 3.2.8   | &#10003; |
-| PHP      | 7.1     | &#10003; |
-| PHPUnit  | 6.0.9   | &#10003; |
-| Composer | 1.4.1   | &#10003; |
-| Varnish  | 4.0     | &#10003; |
-| Node.js  | 6.10.0  | &#10003; |
-| Symfony  | 3.2.4   | &#10003; |
+| Software            | Version  | Tested   |
+|---------------------|----------|----------|
+| Debian              | 8.7      | &#10003; |
+| Nginx               | 1.10.3   | &#10003; |
+| MySQL               | 5.5.54   | &#10003; |
+| Redis               | 3.2.8    | &#10003; |
+| PHP                 | 7.1      | &#10003; |
+| PHPUnit             | 6.0.9    | &#10003; |
+| Composer            | 1.4.1    | &#10003; |
+| Varnish             | 4.0      | &#10003; |
+| Node.js             | 6.10.0   | &#10003; |
+| Symfony             | 3.2.4    | &#10003; |
+| Cinnamon      (new) | 2.2.16   | &#10003; |
+| GoogleChrome  (new) | latest   | &#10003; |
+| SublimeText 3 (new) | latest   | &#10003; |
+| PHP-Storm     (new) | 2017.1   | &#10003; |
 
 ## Requirements
  - Hypervisor
@@ -37,8 +41,8 @@ This is a development environment for Symfony projects on a Debian based Vagrant
 
 ## Default access
 
- - Webserver: http://lemp.test/
- - Symfony projects: http://example.lemp.test
+ - Webserver: http://lemp.ldev/
+ - Symfony projects: http://example.lemp.ldev
  - Default web root: /vagrant/web
  - Symfony web root: /vagrant/example
  - MySQL: 192.168.56.111:3306
