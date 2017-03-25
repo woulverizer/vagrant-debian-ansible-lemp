@@ -8,7 +8,7 @@
     - { role: mysql }
     - { role: redis }
     - { role: nodejs }
-    - { role: cinnamon }
+    - { role: chrome }
     - { role: sublimetext }
     - { role: phpstorm }
     - { role: tests, when: testing_mode == 1 }
