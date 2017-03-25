@@ -61,9 +61,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provider "virtualbox" do |vb|
-      vb.gui = false
-      vb.customize ['modifyvm', :id, '--memory', 4096]
+      vb.gui = true
+      vb.customize ['modifyvm', :id, '--memory', 6096]
       vb.customize ["modifyvm", :id, "--cpus", 2]
+      vb.customize ["modifyvm", :id, "--vram", 50]
+      vb.customize ["modifyvm", :id, "--accelerate2dvideo", "on"]
+      vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
       vb.customize ["modifyvm", :id, "--name", vagrant_config['vmname']]
   end
 
