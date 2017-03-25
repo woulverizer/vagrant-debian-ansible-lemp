@@ -1,5 +1,5 @@
 configs:
-    private_ip: "192.168.56.111"    # VM IP in your host-only-network
-    vmname: "symfony-development"   # VM name for Virtualbox or Parallels
-    servername: "lemp.test"         # Servername and domain for your projects
-    projectnames: ["example"]       # Comma-separated list with your projectnames
+    private_ip: "192.168.56.42"         # VM IP in your host-only-network
+    vmname: "symfony-development-gui"   # VM name for Virtualbox or Parallels
+    servername: "lemp.ldev"             # Servername and domain for your projects
+    projectnames: ["example"]           # Comma-separated list with your projectnames
