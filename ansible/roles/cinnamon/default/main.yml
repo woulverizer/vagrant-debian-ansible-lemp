@@ -1,0 +1,6 @@
+##################################################
+### Install basic system packages
+- name: Install cinnamon
+  apt: name={{ item }} state=present
+  with_items:
+    - cinnamon-core
